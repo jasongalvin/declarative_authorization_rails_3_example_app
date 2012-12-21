@@ -6,17 +6,28 @@ Based on the Declarative Authorization RailsCast http://railscasts.com/episodes/
 
 h2. Installation
 
-bundle install
-rake db:create
-rake db:migrate
-rake db:fixtures:load
+After setting up the app, please run:
 
-Then start the server, and you should be good to go!
+rake db:seed
+
+to populate the database
 
 h2. Users
 
-name: First User
-username: user@example.com
+name: Admin User
+username: admin@example.com
+password: please
+
+name: Guest User
+username: guest@example.com
+password: please
+
+name: Moderator User
+username: moderator@example.com
+password: please
+
+name: Author User
+username: author@example.com
 password: please
 
 h2. Development

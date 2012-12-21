@@ -1,9 +1,0 @@
-first:
-  email: user@example.com
-  encrypted_password: $2a$10$lXRm//meH8SoGkL9e5Be9uWTBtOulofXevJVmGm.2a.yjbuYYrO5O
-  name: "First User"
-
-second:
-  email: user2@example.com
-  encrypted_password: $2a$10$lXRm//meH8SoGkL9e5Be9uWTBtOulofXevJVmGm.2a.yjbuYYrO5O
-  name: "Second User"
