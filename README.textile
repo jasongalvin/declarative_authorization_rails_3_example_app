@@ -6,27 +6,19 @@ Based on the Declarative Authorization RailsCast http://railscasts.com/episodes/
 
 h2. Installation
 
-After setting up the app, please run:
-
-rake db:seed
-
-to populate the database
+After setting up the app, please run 'rake db:seed' to populate the database
 
 h2. Users
 
-name: Admin User
 username: admin@example.com
 password: please
 
-name: Guest User
 username: guest@example.com
 password: please
 
-name: Moderator User
 username: moderator@example.com
 password: please
 
-name: Author User
 username: author@example.com
 password: please
 
