@@ -28,6 +28,10 @@ h2. Development
 * Authentication: Devise
 * Authorization: Declarative Authorization
 
+h2. To Do
+
+* Admin interface to manage user permissions.  Right now permissions have to be set in the command line.
+
 h2. Contributing
 
 If you make improvements to this application, please share with others.
