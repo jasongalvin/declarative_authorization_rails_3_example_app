@@ -51,6 +51,7 @@ GEM
       execjs
     coffee-script-source (1.4.0)
     database_cleaner (0.9.1)
+    declarative_authorization (0.5.6)
     devise (2.1.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -179,6 +180,7 @@ DEPENDENCIES
   capybara (>= 2.0.1)
   coffee-rails (~> 3.2.1)
   database_cleaner (>= 0.9.1)
+  declarative_authorization
   devise (>= 2.1.2)
   email_spec (>= 1.4.0)
   factory_girl_rails (>= 4.1.0)

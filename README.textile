@@ -1,64 +1,23 @@
 h1. Declarative Authorization Rails 3 Example App
 
-This application was generated with the "rails_apps_composer":https://github.com/RailsApps/rails_apps_composer gem provided by the "RailsApps Project":http://railsapps.github.com/.
+Sample Rails 3 and Devise app using "declarative_authorization":https://github.com/stffn/declarative_authorization gem.
 
-h2. Diagnostics
+Based on the Declarative Authorization RailsCast http://railscasts.com/episodes/188-declarative-authorization
 
-This application was built with recipes that are known to work together.
+h2. Users
 
-This application was built with preferences that are NOT known to work together.
-
-If the application doesn't work as expected, please "report an issue":https://github.com/RailsApps/rails_apps_composer/issues and include these diagnostics:
-
-We'd also like to know if you've found combinations of recipes or preferences that do work together.
-
-Recipes:
-["controllers", "core", "email", "extras", "frontend", "gems", "git", "init", "models", "prelaunch", "railsapps", "readme", "routes", "saas", "setup", "testing", "views"]
-
-Preferences:
-{:git=>true, :railsapps=>"none", :dev_webserver=>"webrick", :database=>"sqlite", :templates=>"haml", :unit_test=>"rspec", :integration=>"rspec-capybara", :fixtures=>"factory_girl", :frontend=>"bootstrap", :bootstrap=>"sass", :email=>"none", :authentication=>"devise", :devise_modules=>"default", :authorization=>"none", :form_builder=>"none", :starter_app=>"users_app", :local_env_file=>true, :github=>true}
-
-h2. Ruby on Rails
-
-This application requires:
-
-* Ruby version 1.9.3
-* Rails version 3.2.9
-
-Learn more about "Installing Rails":http://railsapps.github.com/installing-rails.html.
-
-h2. Database
-
-This application uses SQLite with ActiveRecord.
+name: First User
+username: user@example.com
+password: please
 
 h2. Development
 
+* Data persistence: SQLite with ActiveRecord
 * Template Engine: Haml
 * Testing Framework: RSpec and Factory Girl
 * Front-end Framework: Twitter Bootstrap (Sass)
-* Form Builder: None
 * Authentication: Devise
-* Authorization: None
-
-
-
-
-
-h2. Getting Started
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-h2. Documentation and Support
-
-This is the only documentation.
-
-h4. Issues
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-h2. Similar Projects
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+* Authorization: Declarative Authorization
 
 h2. Contributing
 
@@ -73,8 +32,4 @@ If you add functionality to this application, create an alternative implementati
 
 h2. Credits
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-h2. License
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+This application was started with the excellent "rails_apps_composer":https://github.com/RailsApps/rails_apps_composer gem provided by the "RailsApps Project":http://railsapps.github.com/.

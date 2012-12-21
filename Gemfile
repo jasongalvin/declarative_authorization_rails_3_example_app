@@ -20,3 +20,4 @@ gem "bootstrap-sass", ">= 2.1.1.0"
 gem "devise", ">= 2.1.2"
 gem "figaro", ">= 0.5.0"
 gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
+gem "declarative_authorization"

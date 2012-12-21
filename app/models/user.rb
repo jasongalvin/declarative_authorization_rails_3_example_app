@@ -6,6 +6,17 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :name, :email, :password, :password_confirmation, :remember_me
+  attr_accessible :name, :email, :password, :password_confirmation, 
+                  :remember_me, :role_ids
   
+  has_many :articles
+  has_many :comments
+  has_many :assignments
+  has_many :roles, :through => :assignments
+  
+  def role_symbols
+    roles.map do |role|
+      role.name.underscore.to_sym
+    end
+  end
 end
