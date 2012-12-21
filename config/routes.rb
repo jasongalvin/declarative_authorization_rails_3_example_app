@@ -1,7 +1,7 @@
 DeclarativeAuthorizationRails3ExampleApp::Application.routes.draw do
   resources :articles, :comments
   authenticated :user do
-    root :to => 'home#index'
+    root :to => 'users#index'
   end
   root :to => "articles#index"
   devise_for :users

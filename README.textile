@@ -10,13 +10,13 @@ After setting up the app, please run 'rake db:seed' to populate the database.
 
 h2. Users
 
-username: admin@example.com
+admin@example.com
 password: password
 
-username: moderator@example.com
+moderator@example.com
 password: password
 
-username: author@example.com
+author@example.com
 password: password
 
 h2. Development
