@@ -9,7 +9,7 @@
     </ul>
   </div>
 <% end %>
-<% form_for @comment do |f| %>
+<%= form_for @comment do |f| %>
   <%= f.hidden_field :article_id %>
   <p>
     <%= f.label :author_name, 'Name' %><br />
