@@ -15,7 +15,6 @@ Authorization::Maintenance::without_access_control do
   puts 'Creating Roles'
   
   admin_role = Role.find_or_create_by_name :name => 'admin'
-  guest_role = Role.find_or_create_by_name :name => 'guest'
   moderator_role = Role.find_or_create_by_name :name => 'moderator'
   author_role = Role.find_or_create_by_name :name => 'author'
 
@@ -23,10 +22,6 @@ Authorization::Maintenance::without_access_control do
   
   user = User.find_or_create_by_email :name => 'Admin User', :email => 'admin@example.com', :password => 'password', :password_confirmation => 'password'
   user.roles << admin_role unless user.roles.include? admin_role
-  puts 'user: ' << user.name
-  
-  user = User.find_or_create_by_email :name => 'Guest User', :email => 'guest@example.com', :password => 'password', :password_confirmation => 'password'
-  user.roles << guest_role unless user.roles.include? guest_role
   puts 'user: ' << user.name
   
   user = User.find_or_create_by_email :name => 'Moderator User', :email => 'moderator@example.com', :password => 'password', :password_confirmation => 'password'

@@ -2,7 +2,7 @@ h1. Declarative Authorization Rails 3 Example App
 
 Sample Rails 3.2 app using "Devise":https://github.com/plataformatec/devise gem for user authentication and "declarative_authorization":https://github.com/stffn/declarative_authorization gem for user authorization.
 
-Based on the Declarative Authorization RailsCast http://railscasts.com/episodes/188-declarative-authorization
+Based on the "Declarative Authorization RailsCast":http://railscasts.com/episodes/188-declarative-authorization
 
 h2. Installation
 
@@ -11,9 +11,6 @@ After setting up the app, please run 'rake db:seed' to populate the database.
 h2. Users
 
 username: admin@example.com
-password: password
-
-username: guest@example.com
 password: password
 
 username: moderator@example.com
