@@ -4,4 +4,11 @@ one:
   name: Admin
 
 two:
-  name: Editor
+  name: Guest
+
+three:
+  name: Moderator
+
+four:
+  name: Author
+
