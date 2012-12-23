@@ -6,4 +6,8 @@ DeclarativeAuthorizationRails3ExampleApp::Application.routes.draw do
   root :to => "articles#index"
   devise_for :users
   resources :users
+  namespace :admin do
+    resources :users
+    root :to => 'users#index'
+  end
 end
