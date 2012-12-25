@@ -4,4 +4,11 @@
 %p
   Email: #{@user.email if @user.email}
 %p
-  Roles: #{@user.role_symbols}
+  Roles: 
+%p
+  = form_tag(update_roles_admin_user_path(@user), :method => :put) do
+    - for role in Role.all
+      = check_box_tag "role_ids[]", role.id, @user.roles.include?(role)
+      = role.name
+      %br
+    = submit_tag "Update"

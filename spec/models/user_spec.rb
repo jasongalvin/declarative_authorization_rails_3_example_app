@@ -99,5 +99,19 @@ describe User do
     end
 
   end
+  
+  describe "update_roles" do
+    let(:editor_role) { FactoryGirl.create(:role, :name => 'editor') }
+    let(:moderator_role) { FactoryGirl.create(:role, :name => 'moderator') }
+    
+    before(:each) do
+      @user = User.create!(@attr)
+    end
+    
+    it "should update roles associated with user" do
+      @user.update_roles([editor_role.to_param, moderator_role.to_param])
+      @user.roles.should eq [editor_role, moderator_role]
+    end
+  end
 
 end
