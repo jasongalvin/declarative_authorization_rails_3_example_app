@@ -2,6 +2,8 @@ h1. Declarative Authorization Rails 3 Example App
 
 Sample Rails 3.2 app using "Devise":https://github.com/plataformatec/devise gem for user authentication and "declarative_authorization":https://github.com/stffn/declarative_authorization gem for user authorization.
 
+Emphasis of this demo is on test coverage.  Pull requests with improved test coverage are appreciated.
+
 Based on the "Declarative Authorization RailsCast":http://railscasts.com/episodes/188-declarative-authorization
 
 h2. Installation
@@ -27,10 +29,6 @@ h2. Development
 * Front-end Framework: Twitter Bootstrap (Sass)
 * Authentication: Devise
 * Authorization: Declarative Authorization
-
-h2. To Do
-
-* Admin interface to manage user permissions.  Right now permissions have to be set in the command line.
 
 h2. Contributing
 
