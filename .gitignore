@@ -29,7 +29,6 @@ db/*.sqlite3
 .rvmrc
 .sass-cache
 /config/config.yml
-/config/database.yml
 /coverage.data
 /coverage/
 /db/*.javadb/
