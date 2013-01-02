@@ -19,4 +19,15 @@ class User < ActiveRecord::Base
       role.name.underscore.to_sym
     end
   end
+  
+  def update_roles(role_ids)
+    for role in Role.all
+      if role_ids.blank? or !role_ids.include? "#{role.id}"
+        roles.delete(role)
+      else
+        roles << role unless roles.include? role
+      end
+    end
+  end
+
 end
